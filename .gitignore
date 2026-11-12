@@ -1,0 +1,36 @@
+# Dependencias
+node_modules/
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Compilaciones
+dist/
+build/
+coverage/
+
+# Registros
+*.log
+npm-debug.log*
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Archivos locales de desarrollo
+.vscode/
+.idea/
+
+# Datos generados durante las pruebas
+backend/storage/jobs.json
+
+# Modelos STL y G-code almacenados
+backend/storage/models/
+backend/uploads/
+*.gcode
+
+# Sistema operativo
+.DS_Store
+Thumbs.db

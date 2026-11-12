@@ -1,0 +1,110 @@
+.print-queue {
+  margin-top: 24px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e2e5eb;
+  border-radius: 12px;
+}
+
+.print-queue__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.print-queue__title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.print-queue__count {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.print-queue__message {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.print-queue__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.print-queue__item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.print-queue__position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  background: #e2e8f0;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.print-queue__information {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+  flex: 1;
+}
+
+.print-queue__name {
+  overflow-wrap: anywhere;
+}
+
+.print-queue__date {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.print-queue__status {
+  color: #475569;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .print-queue {
+    padding: 16px;
+  }
+
+  .print-queue__item {
+    flex-wrap: wrap;
+  }
+}
+
+.print-queue__item--printing {
+  border-color: #93c5fd;
+  background: #eff6ff;
+}
+
+.print-queue__item--paused {
+  border-color: #fcd34d;
+  background: #fffbeb;
+}
+
+.print-queue__status--printing {
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+.print-queue__status--paused {
+  color: #92400e;
+  font-weight: 600;
+}

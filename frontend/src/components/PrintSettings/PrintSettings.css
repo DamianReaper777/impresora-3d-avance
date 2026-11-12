@@ -1,0 +1,63 @@
+.print-settings {
+  margin-top: 24px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e2e5eb;
+  border-radius: 12px;
+}
+
+.print-settings__title {
+  margin: 0 0 24px;
+  font-size: 20px;
+  color: #111827;
+}
+
+.print-settings__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.print-settings__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.print-settings__label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+}
+
+.print-settings__input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #111827;
+  font-size: 15px;
+}
+
+.print-settings__input:focus {
+  outline: 2px solid #93c5fd;
+  border-color: #2563eb;
+}
+
+.print-settings__input:disabled {
+  background: #f1f5f9;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .print-settings {
+    padding: 16px;
+  }
+
+  .print-settings__grid {
+    grid-template-columns: 1fr;
+  }
+}

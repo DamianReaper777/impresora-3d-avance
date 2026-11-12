@@ -1,0 +1,101 @@
+.printer-details-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.printer-details-page__back {
+  display: inline-block;
+  margin-bottom: 28px;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.printer-details-page__back:hover {
+  text-decoration: underline;
+}
+
+.printer-details-page__content {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 12px;
+  border: 1px solid #e2e5eb;
+}
+
+.printer-details-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.printer-details-page__title {
+  margin: 0;
+  font-size: 28px;
+}
+
+.printer-details-page__status {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #e5e7eb;
+  font-size: 13px;
+}
+
+.printer-details-page__subtitle {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.printer-details-page__field {
+  color: #4b5563;
+  margin-bottom: 14px;
+}
+
+.printer-details-page__message {
+  color: #666666;
+}
+
+.printer-details-page__error {
+  color: #b91c1c;
+}
+
+.printer-details-page__workspace {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+@media (max-width: 850px) {
+  .printer-details-page__workspace {
+    grid-template-columns: 1fr;
+  }
+}
+
+.printer-details-page__job-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.printer-details-page__create-job {
+  padding: 12px 20px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.printer-details-page__create-job:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.printer-details-page__create-job:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

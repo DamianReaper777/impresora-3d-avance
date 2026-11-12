@@ -1,0 +1,36 @@
+.printers-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.printers-page__header {
+  margin-bottom: 28px;
+}
+
+.printers-page__title {
+  margin: 0 0 12px;
+  font-size: 28px;
+}
+
+.printers-page__description {
+  color: #666666;
+  margin: 0;
+}
+
+.printers-page__grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 280px), 1fr)
+  );
+  gap: 20px;
+}
+
+.printers-page__message {
+  color: #666666;
+}
+
+.printers-page__error {
+  color: #b91c1c;
+}

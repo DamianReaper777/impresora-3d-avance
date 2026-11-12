@@ -1,0 +1,109 @@
+/* Contenedor principal del visor */
+.model-viewer {
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e2e5eb;
+  border-radius: 12px;
+  min-width: 0;
+}
+
+/* Encabezado del visor */
+.model-viewer__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Título */
+.model-viewer__title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Botón para restablecer la cámara */
+.model-viewer__reset {
+  padding: 8px 12px;
+  background: #e2e8f0;
+  color: #334155;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.model-viewer__reset:hover {
+  background: #cbd5e1;
+}
+
+.model-viewer__reset:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 3px;
+}
+
+/* Área de renderizado 3D */
+.model-viewer__canvas {
+  width: 100%;
+  height: 400px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Canvas generado por Three.js */
+.model-viewer__canvas canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Mensaje cuando no hay un modelo cargado */
+.model-viewer__placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 24px;
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* Nombre del archivo STL */
+.model-viewer__filename {
+  margin: 12px 0 0;
+  color: #475569;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 600px) {
+  .model-viewer {
+    padding: 16px;
+  }
+
+  .model-viewer__header {
+    align-items: flex-start;
+  }
+
+  .model-viewer__title {
+    font-size: 18px;
+  }
+
+  .model-viewer__canvas {
+    height: 300px;
+  }
+
+  .model-viewer__reset {
+    font-size: 12px;
+    padding: 7px 10px;
+  }
+}
