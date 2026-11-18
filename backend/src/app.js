@@ -8,6 +8,7 @@ import modelRoutes from "./routes/modelRoutes.js";
 import printJobRoutes from "./routes/printJobRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 import historyRoutes from "./routes/historyRoutes.js";
+import deviceRoutes from "./routes/deviceRoutes.js";
 
 import dotenv from "dotenv";
 import path from "path";
@@ -29,7 +30,7 @@ app.use("/api/models", modelRoutes);
 app.use("/api/jobs", printJobRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/history", historyRoutes);
-
+app.use("/api/device", deviceRoutes);
 app.use((error, req, res, next) => {
   if (error instanceof multer.MulterError) {
     return res.status(400).json({
